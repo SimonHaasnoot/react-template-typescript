@@ -1,0 +1,6 @@
+@use '../abstract/colors' as *;
+
+.header {
+    background: $color01;
+    padding: 20px 0;
+}

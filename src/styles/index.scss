@@ -1,0 +1,5 @@
+// import abstract folder, automatically looks through the index file
+@use './abstract';
+
+@use './components/header.scss';
+@use './components/footer.scss';

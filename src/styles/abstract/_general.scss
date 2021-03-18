@@ -1,0 +1,118 @@
+@use './mixins' as *;
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a,
+p,
+li {
+    font-size: 15px;
+
+    @include respond-to('small') {
+        font-size: 16px;
+    }
+}
+
+a {
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    word-break: break-word;
+    margin-bottom: 0;
+    line-height: 1;
+
+    + p {
+        margin: 8px 0 24px 0;
+    }
+}
+
+h1 {
+    font-size: 2em;
+    font-size: clamp(2em, 6vw, 64px);
+
+    @include respond-to('medium') {
+        font-size: 48px;
+        font-size: clamp(2em, 6vw, 64px);
+    }
+
+    @include respond-to('large') {
+        font-size: 64px;
+        font-size: clamp(2em, 6vw, 64px);
+    }
+}
+
+h2 {
+    font-size: 1.5em;
+    font-size: clamp(1.5em, 4vw, 48px);
+
+    @include respond-to('medium') {
+        font-size: 36px;
+        font-size: clamp(1.5em, 4vw, 48px);
+    }
+
+    @include respond-to('large') {
+        font-size: 48px;
+        font-size: clamp(1.5em, 4vw, 48px);
+    }
+}
+
+h3 {
+    font-size: 19px;
+    font-size: clamp(19px, 3vw, 38px);
+
+    @include respond-to('medium') {
+        font-size: 26px;
+        font-size: clamp(19px, 3vw, 38px);
+    }
+
+    @include respond-to('large') {
+        font-size: 36px;
+        font-size: clamp(19px, 3vw, 38px);
+    }
+}
+
+h4 {
+    font-size: 1em;
+    font-size: clamp(1em, 2vw, 32px);
+
+    @include respond-to('medium') {
+        font-size: 24px;
+        font-size: clamp(1em, 2vw, 32px);
+    }
+
+    @include respond-to('large') {
+        font-size: 32px;
+        font-size: clamp(1em, 2vw, 32px);
+    }
+}
+
+h5 {
+    font-size: 13px;
+    font-size: clamp(13px, 1.5vw, 26px);
+
+    @include respond-to('medium') {
+        font-size: 19.5px;
+        font-size: clamp(13px, 1.5vw, 26px);
+    }
+
+    @include respond-to('large') {
+        font-size: 26px;
+        font-size: clamp(13px, 1.5vw, 26px);
+    }
+}
