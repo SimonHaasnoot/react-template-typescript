@@ -6,6 +6,9 @@
 * Folder structure
 * Configuration (.editorconfig, .prettierrc)
 
+## Project
+Running the project: `npm install` & `npm start`
+
 ## Useful npm libraries
 
 * @fortawesome/fontawesome-svg-core
@@ -18,6 +21,7 @@
 * react-helmet-async
 * react-lazyload
 * typewriter-effect
+* [react-loading-skeleton](https://www.npmjs.com/package/react-loading-skeleton)
 * swiper
 * sass
 * formik
